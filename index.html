@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KetabYar</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="font-arial bg-white text-[#222] transition-[0.3s]">
+    <!-- Navbar -->
+    <header
+      class="fixed w-full top-0 border-b-1 border-solid border-[#ddd] z-1000"
+    >
+      <nav
+        class="max-w-[1100px] m-auto py-[15px] px-[20xp] flex justify-between items-center"
+      >
+        <h2 class="text-[#059669]">KetabYar</h2>
+
+        <div class="flex items-center gap-[15px]">
+          <a href="#home" class="decoration-none text-[#059669]">Home</a>
+          <a href="#features" class="decoration-none text-[#059669]"
+            >Features</a
+          >
+          <button
+            id="darkBtn"
+            onclick="document.documentElement.classList.toggle('dark')"
+            class="px-5 py-2 rounded-lg text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+          >
+            🌙
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+
+      <section
+        class="min-h-[100vh] flex flex-col items-center justify-center text-center pt-[80px] pb-[20px] pr-[40px] pl-[40px]"
+        id="home"
+      >
+        <h1 class="text-[40px] mb-[20px]">Books for Afghan Readers</h1>
+
+        <p class="max-w-[550px] text-[#666] leading-[1.6]">
+          Find Dari and Pashto books easily and order them online.
+        </p>
+
+        <div class="mt-[30px] flex gap-[10px]">
+          <a
+            href="#features"
+            class="rounded-[30px] transition-[0.3s] py-[12px] px-[20px] bg-[#059669] text-white hover:bg-green-700 hover:translate-y-[-3px]"
+            >Explore Books</a
+          >
+          <a
+            href="#features"
+            class="rounded-[30px] transition-[0.3s] py-[12px] px-[20px] border-[1px] border-solid border-green-700 hover:bg-gray-100 hover:translate-y-[-3px]"
+            >Learn More</a
+          >
+        </div>
+      </section>
+
+      <!-- Features -->
+
+      <section class="bg-[#f5f5f5] py-[80px] px-[20px]" id="features">
+        <h2 class="text-center mb-[40px]">Our Features</h2>
+
+        <div
+          class="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]"
+        >
+          <div
+            class="bg-white p-[30px] rounded-[12px] transition-[0.3s] hover:translate-y-[-6px] hover:[box-shadow:0_5px_20px_greenyellow]"
+          >
+            <h3 class="mb-[15px]">📚 Dari & Pashto Books</h3>
+            <p class="text-[#666]">Find books written in Dari and Pashto.</p>
+          </div>
+
+          <div
+            class="bg-white p-[30px] rounded-[12px] transition-[0.3px] hover:translate-y-[-6px] hover:[box-shadow:0_5px_20px_greenyellow]"
+          >
+            <h3 class="mb-[15px]">🚚 Fast Delivery</h3>
+            <p class="text-[#666]">
+              Order your books and receive them at home.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-[30px] rounded-[12px] transition-[0.3px] hover:translate-y-[-6px] hover:[box-shadow:0_5px_20px_greenyellow]"
+          >
+            <h3 class="mb-[15px]">❤️ Afghan Writers</h3>
+            <p class="text-[#666]">Support Afghan writers and publishers.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#111827] text-white text-center py-[40px] px-[20px]">
+      <div class="mb-[20px]">
+        <a
+          href="#home"
+          class="my-[0] mx-[10px] decoration-none text-white hover:text-green-700"
+          >Home</a
+        >
+        <a
+          href="#features"
+          class="my-[0] mx-[10px] decoration-none text-white hover:text-green-700"
+          >Features</a
+        >
+      </div>
+
+      <p>© 2026 KetabYar · Built at Afghan Geeks Edu</p>
+    </footer>
+
+
+  </body>
+</html>
+<script>
+      const darkBtn = document.getElementById("darkBtn");
+      darkBtn.addEventListener("click", function(){
+        document.body.classList.toggle("dark");
+      }){
+
+      }
+    </script>
