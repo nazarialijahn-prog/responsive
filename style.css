@@ -5,7 +5,7 @@
 .text{
   font-size: clamp(3rem, 9vw, 5.5rem);
   font-weight: 800;
-  color: #00ff15;
+  color: #0004ff;
   cursor: pointer;
   position: relative;
   letter-spacing: -0,03em;
