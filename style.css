@@ -2,3 +2,25 @@
   box-sizing: border-box;
 }
 
+.text{
+  font-size: clamp(3rem, 9vw, 5.5rem);
+  font-weight: 800;
+  color: #00ff15;
+  cursor: pointer;
+  position: relative;
+  letter-spacing: -0,03em;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+.text{
+  display: inline-block;
+  transition:
+  transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  color: 0.35s ease;
+  text-shadow: 0.35s ease;
+}
+.text span:hover{
+  transform: scale(1.18) translate(-8px);
+  color: #ffffff;
+  text-shadow: 0 0 24px rgba(0, 0, 0, 0.55);
+}
